@@ -1,0 +1,318 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#fff5fb;
+  color:#333;
+}
+
+/* NAVBAR */
+
+header{
+  background:linear-gradient(90deg,#ff4fa3,#ff7ecf);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.logo{
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:yellow;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  color:white;
+  max-width:700px;
+  z-index:1;
+}
+
+.hero-content h1{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.hero-content button{
+  padding:15px 35px;
+  border:none;
+  border-radius:30px;
+  background:#ff4fa3;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-content button:hover{
+  background:#ff0080;
+  transform:scale(1.05);
+}
+
+/* ABOUT */
+
+.about{
+  padding:80px 8%;
+}
+
+.about h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:40px;
+  color:#ff0080;
+}
+
+.about-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.about-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-card h3{
+  margin-bottom:15px;
+  color:#ff4fa3;
+}
+
+/* PRODUK */
+
+.produk{
+  padding:80px 8%;
+  background:#ffeaf5;
+}
+
+.produk h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:40px;
+  color:#ff0080;
+}
+
+.produk-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.produk-card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.produk-card:hover{
+  transform:translateY(-10px);
+}
+
+.produk-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.produk-card h3{
+  margin:15px;
+}
+
+.produk-card p{
+  margin:0 15px 15px;
+}
+
+.produk-card h4{
+  margin:15px;
+  color:#ff0080;
+}
+
+.produk-card button{
+  margin:15px;
+  padding:12px 20px;
+  border:none;
+  border-radius:10px;
+  background:#ff4fa3;
+  color:white;
+  cursor:pointer;
+}
+
+/* KERANJANG */
+
+.keranjang{
+  padding:80px 8%;
+}
+
+.keranjang h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#ff0080;
+  font-size:40px;
+}
+
+#isiKeranjang{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+#totalHarga{
+  margin-top:20px;
+  color:#ff0080;
+}
+
+/* PEMBELIAN */
+
+.pembelian{
+  padding:80px 8%;
+  background:#ffeaf5;
+}
+
+.pembelian h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#ff0080;
+  font-size:40px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input, textarea{
+  padding:15px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+form button{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  background:#ff4fa3;
+  color:white;
+  cursor:pointer;
+}
+
+#hasilPembelian,
+#hasilKontak{
+  margin-top:30px;
+  background:white;
+  padding:25px;
+  border-radius:20px;
+}
+
+/* KONTAK */
+
+.kontak{
+  padding:80px 8%;
+}
+
+.kontak h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:#ff0080;
+  font-size:40px;
+}
+
+.kontak-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.admin-box{
+  background:#ff4fa3;
+  color:white;
+  padding:30px;
+  border-radius:20px;
+}
+
+.admin-box h3{
+  margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#ff4fa3;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  header{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero-content h1{
+    font-size:38px;
+  }
+
+}
